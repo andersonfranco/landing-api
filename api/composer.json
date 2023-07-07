@@ -1,0 +1,38 @@
+{
+    "name": "andersonfranco/curso-lp",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anderson Franco",
+            "email": "andersonfranco@gmail.com"
+        }
+    ],
+    "require": {
+	    "gabordemooij/redbean": "dev-master",
+        "phpoffice/phpspreadsheet": "^1.28",
+        "pecee/simple-router": "5.3.0.5",
+        "somnambulist/validation": "^1.7"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10",
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "scripts": {
+        "test": "phpunit tests",
+        "stan": "phpstan",
+        "sniffer:php74": "phpcs -p ./app --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 7.4",
+        "sniffer:php82": "phpcs -p ./app --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.2",
+        "review": ["@sniffer:php74", "@sniffer:php82", "@stan", "@test"]
+    }
+}

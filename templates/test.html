@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Landing Page</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Lorem ipsum dolor sit!</h1>
+          <p class="col-md-8 fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+  </header>
+  <main>
+    <div class="container">
+        <form name="lead-form">
+            <div class="mb-3 row">
+                <label for="nome" class="col-4 col-form-label">Nome</label>
+                <div class="col-8">
+                    <input type="text" value="" class="form-control" name="nome" id="nome" placeholder="Nome">
+                </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="email" class="col-4 col-form-label">Email</label>
+              <div class="col-8">
+                <input type="text" value="" class="form-control" name="email" id="email" placeholder="abc@mail.com">
+                <small class="form-text text-muted">Seu melhor contato</small>
+              </div>
+            </div>
+            <fieldset class="mb-3 row">
+                <legend class="col-form-label col-4">Receber contato por</legend>
+                <div class="col-8">
+                    <div class="form-check">
+                        <input name="whatsapp" class="" type="checkbox" id="whatsapp" value="Sim">
+                        <label class="form-check-label" for="whatsapp">Whatsapp</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="telefone" class="" type="checkbox" id="telefone" value="Sim">
+                        <label class="form-check-label" for="telefone">Telefone</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="mb-3 row">
+                <legend class="col-form-label col-4">Tipo</legend>
+                <div class="col-8">
+                  <div class="form-check">
+                    <input class="" type="radio" name="tipo" id="tipo-profissional" value="PRO">
+                    <label class="form-check-label" for="tipo-profissional">
+                      Profissional
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="" type="radio" name="tipo" id="tipo-estudante" value="EST">
+                    <label class="form-check-label" for="tipo-estudante">
+                      Estudante
+                    </label>
+                  </div>
+                </div>
+            </fieldset>
+            <fieldset class="mb-3 row">
+              <legend class="col-form-label col-4 ">Interesses</legend>
+              <div class="col-8">
+                  <div class="form-check">
+                      <input name="interesse[]" type="checkbox" id="casa" value="Casa">
+                      <label class="form-check-label" for="casa">Casa</label>
+                  </div>
+                  <div class="form-check">
+                      <input name="interesse[]" type="checkbox" id="apartamento" value="Apartamento">
+                      <label class="form-check-label" for="apartamento">Apartamento</label>
+                  </div>
+                  <div class="form-check">
+                      <input name="interesse[]" type="checkbox" id="terreno" value="Terreno">
+                      <label class="form-check-label" for="terreno">Terreno</label>
+                  </div>
+              </div>
+          </fieldset>            
+            <div class="mb-3 row">
+                <div class="offset-sm-4 col-sm-8 d-inline-flex">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <p class="success align-self-center m-0 ms-2 fw-light text-success d-none">Mensagem enviada com sucesso!</p>
+                </div>
+            </div>
+        </form>
+
+        <hr />
+
+        <div class="container">
+          <form name="contact-form">
+            <div class="mb-3 row">
+              <label for="departamento" class="col-4 col-form-label">Departamento</label>
+              <div class="col-8">
+                <select class="form-select form-select-lg" name="departamento" id="departamento">
+                  <option value="" selected>Selecione</option>
+                  <option value="vendas">Vendas</option>
+                  <option value="suporte">Suporte</option>
+                  <option value="financeiro">Financeiro</option>
+                </select>
+                </div>
+            </div>              
+            <div class="mb-3 row">
+              <label for="nome" class="col-4 col-form-label">Nome</label>
+              <div class="col-8">
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="email" class="col-4 col-form-label">Email</label>
+              <div class="col-8">
+                <input type="email" class="form-control" name="email" id="email" placeholder="abc@mail.com">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="mensagem" class="col-4 col-form-label">Mensagem</label>
+              <div class="col-8">
+                <textarea class="form-control" name="mensagem" id="mensagem" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <div class="offset-sm-4 col-sm-8 d-inline-flex">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <p class="success align-self-center m-0 ms-2 fw-light text-success d-none">Mensagem enviada com sucesso!</p>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script>
+    const APIBaseURL = 'http://localhost:3000/';
+
+    const PageForms = {
+      'lead-form': 'leads',
+      'contact-form': 'contacts'
+    };
+
+    const hideFormErrors = (form) => {
+      Array.from(form.querySelectorAll('input, textarea, select')).map(item => item.classList.remove('is-invalid'));
+    }
+
+    const showFormErrors = (form, errors) => {
+      const alertErrors = [];
+      Object.entries(errors).forEach(item => {
+        const element = Array.from(form.querySelectorAll(`input[name="${item[0]}"],input[name="${item[0]}[]"],textarea[name="${item[0]}"],textarea[name="${item[0]}[]"],select[name="${item[0]}"],select[name="${item[0]}[]"]`)).at(-1);
+        if (element) { 
+          element.classList.add('is-invalid');
+          let errorElement = element.parentNode.querySelector('.invalid-feedback');
+          if (!errorElement) {
+            errorElement = document.createElement('div');
+            errorElement.classList.add('invalid-feedback');
+            element.parentNode.appendChild(errorElement);
+          }
+          if (errorElement.classList.contains('invalid-feedback')) {
+            errorElement.innerText = item[1]
+          }
+        } else {
+          alertErrors.push(item[1]);
+        }
+      });
+      if (alertErrors.length) {
+        setTimeout(() => {
+          alert('Erro: \n' + alertErrors.join('\n') + '.');
+        }, 100);
+      }
+    }
+
+    const showSuccessMessage = (event) => {
+      const successMessage = event.submitter?.nextSibling?.nextSibling?.classList?.contains('success') 
+                           ? event.submitter.nextSibling.nextSibling : undefined;
+      if (successMessage) {
+        successMessage.classList.remove('d-none');
+        setTimeout(() => {
+          successMessage.classList.add('d-none');
+        }, 3000);
+      } else {
+        alert('Mensagem enviada com sucesso!');
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+      Object.entries(PageForms).forEach(([formName, formURL] = form) => {
+        let formSending = false;
+        document.forms[formName].addEventListener('submit', async (e) => {
+          e.preventDefault();
+          if (formSending) return; else formSending = true;
+          const thisForm = e.target;
+          hideFormErrors(thisForm);
+          try {
+            const response = await fetch(APIBaseURL + formURL, {
+                method: "POST",
+                body: new FormData(e.target)
+            });
+            if (!response?.ok) {
+              throw new Error(`HTTP Response Code: ${response?.status}`);
+            }
+            const result = await response.json();
+            if (result.success) {
+              e.target.reset();
+              showSuccessMessage(e);
+            } else {
+              showFormErrors(thisForm, result.errors);
+            }
+          } catch (error) {
+            showFormErrors(thisForm, {'_': error});
+          }
+          formSending = false;
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>

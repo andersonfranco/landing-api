@@ -1,0 +1,6 @@
+parameters:
+  paths:
+    - app
+    - public
+    - tests
+  level: max
