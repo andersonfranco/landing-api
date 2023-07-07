@@ -1,5 +1,5 @@
 {
-    "name": "andersonfranco/curso-lp",
+    "name": "andersonfranco/landing-api",
     "autoload": {
         "psr-4": {
             "App\\": "app/"
